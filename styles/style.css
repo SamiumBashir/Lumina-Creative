@@ -53,6 +53,16 @@ img{
     margin-bottom: 40px;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* container */
 
 .container{
@@ -198,17 +208,53 @@ img{
     border-radius: 10px;
 }
 
-.connect{
+.contact{
     padding: 3rem 0 4rem;
 }
 
-.connect p{
+.contact p{
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .form-group{
     margin: 2rem 0;
+}
+
+.contact input,
+.contact textarea{
+    border: none;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    padding-bottom: 1rem;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    outline: 0;
+}
+
+.contact textarea{
+    height: 150px;
+    resize: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #333;
+    color: #fff;
 }
 
 /* Responsive section */
